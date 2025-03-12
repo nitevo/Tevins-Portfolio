@@ -1,0 +1,314 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: helvetica;
+  }
+  body {
+    background-color: #1a1110;
+    color: white;
+  }
+  .header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    /*background-color: yellowgreen;*/
+    background-color: transparent;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    z-index: 100;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+  }
+  .logo::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%; 
+    height: 100%;
+    background-color: #1a1110;
+    animation: showRight 1s ease forwards;
+    animation-delay: 0.4s;
+  }
+  .nav a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 0px black, 0px 2px black, -2px 0px black, 0 -2px black;
+    margin-left: 35px;
+    font-weight: 500px;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+  nav {
+    position: relative;
+  }
+  nav::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #1a1110;
+    animation: showRight 1s ease forwards;
+    animation-delay: 0.6s;
+  }
+  nav a:hover {
+    color: lightblue;
+  }
+  nav a.active {
+    color: lightblue;
+  }
+  .home {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    color: white;
+    padding: 0px 10%;
+    /*background: url(https://assets.onecompiler.app/42b2w6nxs/43be3aagz/blackTable_bg.jpg.png) no-repeat;
+    background-size: cover;
+    background-position: center;*/
+  }
+  .home-content {
+    /*backgrond-color: yellow;*/
+    max-width: 600px;
+  }
+  .home-content h1 {
+    position: relative;
+    font-size: 56px;
+    font-weight: 700px;
+    line-height: 1.2;
+  }
+  .home-content h1::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%; 
+    height: 100%;
+    background-color: #1a1110;
+    animation: showRight 1s ease forwards;
+    animation-delay: 0.8s;
+  }
+  .home-content h3 {
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    color: lightblue;
+  }
+  .home-content h3::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #1a1110;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+  }
+  .home-content p {
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0px 40px;
+    text-align: justify;
+    letter-spacing: 2px;
+  }
+  .home-content p::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #1a1110;
+    width: 100%;
+    height: 100%;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.2s;
+  }
+  .home-content .button {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+    margin-top: 20px;
+    /*background-color: yellowgreen;*/
+  }
+  .home-content .button::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #1a1110;
+    width: 100%;
+    height: 100%;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.4s;
+    z-index: 2
+  }
+  .button a {
+    position: relative;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: lightblue;
+    border: 2px solid lightblue;
+    border-radius: 8px;
+    font-size: 19px;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .button a::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #1a1110;
+    z-index: -1;
+    height: 100%;
+    width: 0;
+    transition: 1s;
+  }
+  .button a:hover::before{
+    width: 100%;
+  }
+  .button a:nth-child(2) {
+    background: transparent;
+    color: lightblue;
+  }
+  .button a:nth-child(2)::before {
+    background-color: lightblue;
+  }
+  .button a:nth-child(2):hover {
+    color: #081b29;
+  }
+  .button a:nth-child(1):hover {
+    color: white;
+  }
+  .icon-links {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .icon-links::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #1a1110;
+    z-index: 10;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.6s;
+  }
+  .icon-links a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid lightblue;
+    border-radius: 50%;
+    font-size: 20px;
+    color: lightblue;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: 1s;
+  }
+  .icon-links a:hover {
+    color: white;
+  }
+  .icon-links a::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0;
+    height: 100%;
+    background-color: lightblue;
+    z-index: -1;
+    transition: 1s;
+  }
+  .icon-links a:hover::before {
+    width: 100%
+  }
+  .home-imageHover {
+    float: left;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 500px;
+    height: 100%;
+    background: transparent;
+    transition: 3s;
+  }
+  .home-imageHover:hover {
+    background-color: black;
+    opacity: 0.8;
+  }
+  /* New Right Section Styles */
+.right-section {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%; /* Adjust width as needed */
+    height: 100vh;
+    background-color: #1a1110;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 99;
+}
+.right-section::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #1a1110;
+    z-index: 10;
+    animation: showRight 0.8s ease forwards;
+    animation-delay: 2s;
+  }
+  
+.right-content {
+    margin-top: 80px; /* Adjust to avoid overlap with header */
+    color: white;
+}
+.right-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.right-content p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+  
+  /*KEYFRAMES ANIMATION*/
+  @keyframes showRight {
+    100% {
+      width: 0;
+    }
+  }
+  
