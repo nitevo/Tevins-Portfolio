@@ -315,7 +315,51 @@
     font-size: 16px;
     line-height: 1.5;
 }
-  
+
+@media screen and (max-width: 1116px) {
+    .right-section {
+      display: flex;
+      width: 30%;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .right-section {
+      display: none;
+    }
+    .home {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  @media screen and (max-width: 800px)  {
+    .right-section {
+      position: static;
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .right-section {
+      display: none;
+    }
+    .header {
+      position: static;
+      display: block;
+      text-align: center;
+    }
+    .nav, .nav a {
+      display: block;
+      padding: 20px;
+      margin-left: 0px;
+      margin-bottom: 0px;
+    }
+    .home {
+      display: block;
+    }
+    .icon-links {
+      position: static;
+      margin-top: 60px;
+    }
+  }
   /*KEYFRAMES ANIMATION*/
   @keyframes showRight {
     100% {
