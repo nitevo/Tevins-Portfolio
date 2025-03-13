@@ -359,6 +359,8 @@
       position: static;
       margin-top: 60px;
     }
+    .card img {
+        height: 100%;
   }
   /*KEYFRAMES ANIMATION*/
   @keyframes showRight {
